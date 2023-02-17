@@ -26,8 +26,13 @@ class Auto():
 		self.registro=registro
 
 	def cantidadAsientos(self):
+		cont=0
+
+		for i in self.asientos:
+			if i!=None:
+				cont+=1
 		
-		return len(self.asientos)
+		return cont
 
 	def verificarIntegridad(self):
 		
@@ -35,8 +40,10 @@ class Auto():
 			aux=0
 
 			for i in self.asientos:
-				if i.registro!=self.registro:
-					aux=1
+
+				if i!=None:	
+					if i.registro!=self.registro:
+						aux=1
 
 			if aux==1:
 

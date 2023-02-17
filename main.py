@@ -48,6 +48,10 @@ class Auto():
 			if aux==1:
 
 				return "Las piezas no son originales"
+
+			else:
+				return "Auto original"
+
 		else:
 
 			return "Auto original"

@@ -14,6 +14,8 @@ class Asiento():
 	
 class Auto():
 
+	cantidadCreados=0
+
 	def __init__(self,modelo,precio,asientos,marca,motor,registro):
 
 		self.modelo=modelo
@@ -22,7 +24,6 @@ class Auto():
 		self.marca=marca
 		self.motor=motor
 		self.registro=registro
-		cantidadCreados=IntVar()
 
 	def cantidadAsientos(self):
 		
